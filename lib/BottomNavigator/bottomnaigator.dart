@@ -1,4 +1,5 @@
 import 'package:ecommerceapp/Pages/homepage.dart';
+import 'package:ecommerceapp/Pages/Order%20Detalis/order.dart';
 import 'package:ecommerceapp/Pages/profile.dart';
 import 'package:flutter/material.dart';
 
@@ -14,7 +15,7 @@ class _BottomNavigatorListState extends State<BottomNavigatorList> {
   final tabs = const [
     HomePage(),
     Text("Student"),
-    Text("Account"),
+    OrdersPage(),
     MyProfile()
   ];
   @override

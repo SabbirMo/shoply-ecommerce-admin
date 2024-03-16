@@ -1,4 +1,5 @@
 
+import 'package:ecommerceapp/Pages/faqs.dart';
 import 'package:flutter/material.dart';
 import 'package:ecommerceapp/Pages/profile.dart';
 
@@ -75,15 +76,22 @@ class _SideNavbarState extends State<SideNavbar> {
               style: TextStyle(fontSize: 17, fontWeight: FontWeight.normal),
             ),
           ),
-          const ListTile(
-            leading: Icon(
+           ListTile(
+            leading: const Icon(
               Icons.message_outlined,
               size: 27,
             ),
-            title: Text(
+            title: const Text(
               "FAQs",
               style: TextStyle(fontSize: 17, fontWeight: FontWeight.normal),
             ),
+            onTap: () {
+              setState(() {
+                Navigator.push(context, 
+                MaterialPageRoute(builder: (context) => const FAQSPage())
+                );
+              });
+            },
           ),
           const ListTile(
             leading: Icon(

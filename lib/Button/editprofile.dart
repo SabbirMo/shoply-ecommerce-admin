@@ -29,6 +29,8 @@ class _EditProfileState extends State<EditProfile> {
     });
   }
 
+
+
   messageShow() {
     final message = SnackBar(
       content: const Row(
@@ -72,6 +74,7 @@ class _EditProfileState extends State<EditProfile> {
                     radius: 40,
                     backgroundImage: MemoryImage(_image!),
                   ):
+                  
                   const CircleAvatar(
                     backgroundImage: AssetImage("assets/aveter.png"),
                     radius: 40
@@ -83,7 +86,7 @@ class _EditProfileState extends State<EditProfile> {
                       onPressed: () {
                         selectImage();
                       },
-                      icon: Icon(Icons.add_a_photo)
+                      icon: const Icon(Icons.add_a_photo)
                     ),
                   ),
                   
